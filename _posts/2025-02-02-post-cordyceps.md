@@ -1,8 +1,12 @@
 ---
-layout: post
 title:  "Cordyceps: Co to je, jak funguje a proč ho zařadit do svého života?"
 date:   2025-02-02 14:00:00 +0100
-categories: Čínská medicína
+categories: 
+  - Blog
+excerpt_separator: "<!--more-->"
+tags:
+  - Houby MRL
+  - Cinska medicina
 ---
 # **Cordyceps: Co to je, jak funguje a proč ho zařadit do svého života?**  
 
