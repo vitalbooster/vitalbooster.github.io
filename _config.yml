@@ -13,10 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Čínská alternativní medicína a moderní zdraví
+title: Vitalbooster
+subtitle: "Version 2.0"
 email: info@vitalbooster.cz
 description: >- # this means to ignore newlines until "baseurl:"
-  Objevte moudrost tradiční čínské medicíny a její propojení s moderním zdravím 
+  Čínská alternativní medicína a moderní zdraví 
   
 twitter_username: username
 github_username: username
