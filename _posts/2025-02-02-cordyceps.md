@@ -7,8 +7,8 @@ excerpt_separator: "<!--more-->"
 tags:
   - Houby MRL
   - Cinska medicina
+author_profile: false
 ---
-# **Cordyceps: Co to je, jak funguje a proč ho zařadit do svého života?**  
 
 ## **Co je Cordyceps?**  
 Cordyceps je houba, která roste vysoko v horách Tibetu a Číny. Používá se po staletí v tradiční čínské medicíně, hlavně na zlepšení energie, imunity a dlouhověkosti.  
