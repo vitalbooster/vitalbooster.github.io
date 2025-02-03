@@ -6,7 +6,8 @@ categories:
 excerpt_separator: "<!--more-->"
 tags:
   - Houby MRL
-  - Cinska medicina
+  - Cordyceps
+  - Čínská medicína
 author_profile: false
 ---
 
