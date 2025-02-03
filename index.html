@@ -14,3 +14,6 @@ header:
     - label: "Install now"
       url: "https://github.com/mmistakes/minimal-mistakes"
 ---
+{% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="btn">Pokračovat</a>
+{% endif %}
