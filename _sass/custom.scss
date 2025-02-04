@@ -1,0 +1,25 @@
+/* Přidejte do _sass/custom.scss */
+.post-excerpt-image {
+  margin-bottom: 1em;
+  
+  img {
+    border-radius: 4px;
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+    
+/* Přidejte do _sass/custom.scss */
+.masthead {
+  height: 832px;
+  overflow: hidden;
+  
+  &__inner-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  &__menu {
+    position: static; /* Reset pozice pro vertikální centrování */
+  }
+}
