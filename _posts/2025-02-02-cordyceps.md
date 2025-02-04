@@ -10,7 +10,8 @@ tags:
   - Čínská medicína
 author_profile: false
 excerpt: Cordyceps je houba, která roste vysoko v horách Tibetu a Číny. Používá se po staletí v tradiční čínské medicíně, hlavně na zlepšení energie, imunity a dlouhověkosti. 
-image: /assets/images/cordyceps.jpg
+header:
+  image: /assets/images/cordyceps.jpg
 ---
 
 ## **Co je Cordyceps?**  
