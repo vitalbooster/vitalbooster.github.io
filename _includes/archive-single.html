@@ -1,7 +1,17 @@
-<!-- Upravte _includes/archive-single.html -->
 {% if post.header.image %}
-  <div class="post-excerpt-image">
+  <div class="archive__item-teaser">
     <img src="{{ post.header.image | relative_url }}" 
-         alt="{{ post.header.alt | default: post.title }}">
+         alt="{{ post.header.alt | default: post.excerpt | default: post.title }}">
+  </div>
+{% endif %}
+
+<h2 class="archive__item-title">
+  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+</h2>
+
+{% if post.excerpt %}
+  <div class="archive__item-excerpt">
+    {{ post.excerpt | markdownify | truncate: 160 }}
+    <a href="{{ post.url | relative_url }}" class="btn btn--info">Číst dále</a>
   </div>
 {% endif %}
