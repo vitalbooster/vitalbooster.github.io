@@ -44,6 +44,13 @@ masthead:
 include:
   - _pages
 
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "G-FNXXP62VSB"
+    anonymize_ip: false # default
+  
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
