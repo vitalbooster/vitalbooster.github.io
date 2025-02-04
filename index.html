@@ -1,51 +1,12 @@
 ---
 layout: home
 author_profile: false
+entries_layout: grid
 classes: wide
-paginate: true
+paginate: 6
+paginate_path: /page:num/
 header:
   overlay_image: /assets/images/mm-home-page-feature.jpg
   overlay_filter: 0.2
+  caption: ""
 ---
-
-<div class="grid__wrapper">
-  {% for post in paginator.posts %}
-    <div class="grid__item">
-      <article class="archive__item">
-        {% if post.header.image %}
-          <div class="archive__item-teaser">
-            <img src="{{ post.header.image | relative_url }}" 
-                 alt="{{ post.header.alt | default: post.title }}"
-                 loading="lazy"
-                 class="archive__item-img">
-          </div>
-        {% endif %}
-        
-        <h2 class="archive__item-title">
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h2>
-        
-        {% if post.excerpt %}
-          <div class="archive__item-excerpt">
-            {{ post.excerpt | markdownify }}
-            <a href="{{ post.url | relative_url }}" class="btn btn--info">Číst dále →</a>
-          </div>
-        {% endif %}
-      </article>
-    </div>
-  {% endfor %}
-</div>
-
-{% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}" class="btn">← Předchozí</a>
-    {% endif %}
-    
-    <span class="current-page">Strana {{ paginator.page }} z {{ paginator.total_pages }}</span>
-    
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}" class="btn">Další →</a>
-    {% endif %}
-  </div>
-{% endif %}
