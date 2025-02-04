@@ -1,0 +1,7 @@
+<!-- Upravte _includes/archive-single.html -->
+{% if post.header.image %}
+  <div class="post-excerpt-image">
+    <img src="{{ post.header.image | relative_url }}" 
+         alt="{{ post.header.alt | default: post.title }}">
+  </div>
+{% endif %}
