@@ -11,30 +11,22 @@
 }
 
 /* Skrytí titulku v post headeru */
-.post__header {
-  h1 {
+.page__header {
+  .page__title {
     display: none !important;
   }
 }
 
 /* Tlačítko "Číst dále" */
-.archive__item-excerpt {
-  position: relative;
-  padding-bottom: 2.5rem;
-
-  .btn {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0.5rem 1.5rem;
-    font-size: 0.9em;
+.archive__item-excerpt .btn {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border: 2px solid #2b7a78;
+  color: #2b7a78 !important;
+  
+  &:hover {
     background: #2b7a78;
-    color: white;
-    border-radius: 4px;
-    
-    &:hover {
-      background: #1f5856;
-    }
+    color: white !important;
   }
 }
 
