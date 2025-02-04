@@ -1,27 +1,31 @@
-/* Přidejte do _sass/custom.scss */
-.post-excerpt-image {
-  margin-bottom: 1em;
-  
-  img {
-    border-radius: 4px;
-    max-height: 300px;
-    object-fit: cover;
-    width: 100%;
-  }
-}
-    
-/* Přidejte do _sass/custom.scss */
+/* Úplná oprava mastheadu */
 .masthead {
-  height: 832px;
-  overflow: hidden;
-  
+  --masthead-height: 832px !important; /* CSS variable pro přepsání všech breakpointů */
+  height: var(--masthead-height);
+  min-height: 0;
+
+  @include breakpoint($medium) {
+    height: var(--masthead-height) !important;
+  }
+
   &__inner-wrap {
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
-  
-  &__menu {
-    position: static; /* Reset pozice pro vertikální centrování */
+
+  .site-title {
+    font-size: 4rem !important;
+    @include breakpoint($medium) {
+      font-size: 5rem !important;
+    }
+  }
+}
+
+/* Reset mobilního menu */
+.masthead__menu {
+  ul {
+    background: transparent !important;
   }
 }
