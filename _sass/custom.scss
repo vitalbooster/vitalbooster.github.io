@@ -1,19 +1,24 @@
-/* Banner a masthead */
 .masthead {
-  height: 832px !important;
+  height: $masthead-height !important;
   min-height: 0 !important;
 
   &__inner-wrap {
     height: 100%;
-    display: flex !important;
+    display: flex;
     align-items: center;
+    justify-content: center;
+  }
+
+  @include breakpoint($medium) {
+    height: $masthead-height !important;
   }
 }
 
-/* Skrytí titulku v post headeru */
-.page__header {
-  .page__title {
-    display: none !important;
+// Reset pro mobilní menu
+.masthead__menu {
+  position: static;
+  ul {
+    background: transparent;
   }
 }
 
