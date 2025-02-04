@@ -2,17 +2,11 @@
 layout: home
 author_profile: false
 classes: wide
-paginate: true  # Vyžaduje správné nastavení v _config.yml
-paginate_path: /page:num/
+paginate: true
 header:
-  overlay_image: /assets/images/mm-home-page-feature.jpg # Změňte na vlastní obrázek
-  overlay_filter: 0.3  # Přidejte průhlednost
-  actions:
-    - label: "Číst více"
-      url: "/o-mne/"  # Upravte na relevantní URL
+  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_filter: 0.2
 ---
-
-{% comment %} Odstraněn duplicitní entries_layout a nefunkční pagination tlačítko {% endcomment %}
 
 <div class="grid__wrapper">
   {% for post in paginator.posts %}
@@ -22,6 +16,7 @@ header:
           <div class="archive__item-teaser">
             <img src="{{ post.header.image | relative_url }}" 
                  alt="{{ post.header.alt | default: post.title }}"
+                 loading="lazy"
                  class="archive__item-img">
           </div>
         {% endif %}
@@ -33,14 +28,7 @@ header:
         {% if post.excerpt %}
           <div class="archive__item-excerpt">
             {{ post.excerpt | markdownify }}
-          </div>
-        {% endif %}
-        
-        {% if post.date %}
-          <div class="archive__item-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-              {{ post.date | date: "%d.%m.%Y" }}
-            </time>
+            <a href="{{ post.url | relative_url }}" class="btn btn--info">Číst dále →</a>
           </div>
         {% endif %}
       </article>
