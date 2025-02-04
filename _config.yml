@@ -49,6 +49,8 @@ analytics:
   google:
     tracking_id: "G-FNXXP62VSB"
     anonymize_ip: false # default
+
+google_site_verification: "dTTSJJuPBFMDTXwGMo8Wz0kbMGdsSrQcFBpY_llFYRY"    
   
 
 # Exclude from processing.
