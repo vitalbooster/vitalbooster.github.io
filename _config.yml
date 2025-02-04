@@ -45,7 +45,7 @@ include:
   - _pages
 
 analytics:
-  provider: "google"
+  provider: "google-gtag"
   google:
     tracking_id: "G-FNXXP62VSB"
     anonymize_ip: false # default
