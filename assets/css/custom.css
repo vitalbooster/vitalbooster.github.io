@@ -1,10 +1,9 @@
-/* Přepsání výšky hero banneru u splash layoutu */
+/* Přepsání výšky hero banneru ve splash layoutu */
 .page__hero {
   height: 832px !important;
   min-height: 832px !important;
 }
-
-/* Volitelně – úprava obsahu uvnitř banneru, aby se nepřesouval dolů */
+/* Zajištění, že obsah banneru bude vertikálně centrovaný, pokud to vyhovuje */
 .page__hero .page__hero__content {
   position: absolute;
   top: 50%;
@@ -12,7 +11,3 @@
   width: 100%;
 }
 
-.card__img {
-  display: block !important;
-  height: auto;
-}
