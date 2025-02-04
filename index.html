@@ -19,28 +19,3 @@ header:
 {% if paginator.next_page %}
   <a href="{{ paginator.next_page_path }}" class="btn">Pokračovat</a>
 {% endif %}
-{% raw %}
-{% include base_path %}
-{% assign posts = site.posts | where_exp: "post", "post.hidden != true" %}
-
-<div class="grid__wrapper">
-  {% for post in posts %}
-    <div class="grid__item">
-      <article class="archive__item">
-        {% if post.header.image %}
-          <div class="archive__item-teaser">
-            <img src="{{ post.header.image | relative_url }}" 
-                 alt="{{ post.header.alt }}">
-          </div>
-        {% endif %}
-        <h2 class="archive__item-title">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
-        {% if post.excerpt %}
-          <p class="archive__item-excerpt">{{ post.excerpt | markdownify }}</p>
-        {% endif %}
-      </article>
-    </div>
-  {% endfor %}
-</div>
-{% endraw %}
