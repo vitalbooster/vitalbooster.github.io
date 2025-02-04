@@ -35,12 +35,33 @@
   }
 }
 
-/* Grid layout */
+/* Grid layout úpravy */
+.archive {
+  &__item {
+    width: 100%;
+    margin-bottom: 2em;
+
+    &-teaser {
+      img {
+        max-height: 240px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+    }
+
+    &-excerpt {
+      font-size: 0.9em;
+      margin-top: 0.5em;
+    }
+  }
+}
+
+/* Responsivní grid */
 .grid__wrapper {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .archive__item-img {
