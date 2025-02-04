@@ -1,0 +1,10 @@
+<figure class="image-container">
+  <img src="{{ include.url | relative_url }}" 
+       alt="{{ include.alt }}" 
+       loading="lazy"
+       decoding="async"
+       class="content-image">
+  {% if include.caption %}
+    <figcaption class="image-caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
