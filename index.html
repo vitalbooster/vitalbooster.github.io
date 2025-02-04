@@ -5,17 +5,17 @@ classes: wide
 paginate: true  # Vyžaduje správné nastavení v _config.yml
 paginate_path: /page:num/
 header:
-  overlay_image: /assets/images/mm-home-page-feature.jpg  # Změňte na vlastní obrázek
+  overlay_image: /assets/images/vas-banner.jpg  # Změňte na vlastní obrázek
   overlay_filter: 0.3  # Přidejte průhlednost
   actions:
     - label: "Číst více"
-      url: "/about/"  # Upravte na relevantní URL
+      url: "/o-mne/"  # Upravte na relevantní URL
 ---
 
 {% comment %} Odstraněn duplicitní entries_layout a nefunkční pagination tlačítko {% endcomment %}
 
 <div class="grid__wrapper">
-  
+  {% for post in paginator.posts %}
     <div class="grid__item">
       <article class="archive__item">
         {% if post.header.image %}
