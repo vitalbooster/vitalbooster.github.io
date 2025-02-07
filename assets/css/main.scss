@@ -1,0 +1,12 @@
+---
+# Front matter je povinná pro zpracování SCSS na GitHub Pages
+---
+
+// Přepište proměnnou pro výšku banneru
+$masthead-height: 832px;
+
+// Naimportujte hlavní styly tématu Minimal Mistakes
+@import "minimal-mistakes";
+
+// Import vlastních přepisů – váš custom SCSS
+@import "custom";
