@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="page">
+  <h1 class="page-title">{{ site.title }}</h1>
+  {% if site.description %}
+    <p>{{ site.description }}</p>
+  {% endif %}
+
+  <div class="home-grid">
+    {% for post in site.posts limit:6 %}
+      <article class="archive-item">
+        {% if post.image %}
+          <a href="{{ post.url | relative_url }}" class="archive-image-link">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="archive-image">
+          </a>
+        {% endif %}
+        <h2 class="archive-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p class="archive-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <a href="{{ post.url | relative_url }}" class="btn">Číst dále</a>
+      </article>
+    {% endfor %}
+  </div>
+</div>
